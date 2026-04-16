@@ -60,32 +60,60 @@ específica.
 RN06 — Telefone obrigatório 
 O cliente deve ser cadastrado com telefone informado (não vazio). 
  Estrutura dos Projetos 
+
 quadra-esportiva/ 
+
 ├── README.md 
+
 ├── projeto1/          → Classes simples sem padrão MVC 
+
+
 │   └── src/main/java/quadra/ 
+
 │       ├── Cliente.java 
+
 │       ├── Horario.java 
+
 │       ├── Aluguel.java 
+
 │       ├── SistemaAluguel.java 
+
 │       └── Main.java 
+
 │ 
+
 └── projeto2/          → Refatorado com padrão MVC 
+    
     └── src/main/java/quadra/ 
+      
         ├── model/ 
+        
         │   ├── Cliente.java 
+        
         │   ├── Horario.java 
+        
         │   └── Aluguel.java 
+                   
         ├── repository/ 
+        
         │   ├── ClienteRepository.java 
+        
         │   ├── HorarioRepository.java 
+        
         │   └── AluguelRepository.java 
+        
         ├── controller/ 
+        
         │   ├── ClienteController.java 
+        
         │   ├── HorarioController.java 
+        
         │   └── AluguelController.java 
+        
         ├── view/ 
+        
         │   └── SistemaView.java 
+        
         └── Main.java 
  
  
